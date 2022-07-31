@@ -8,6 +8,8 @@ import { removeFilter, clearFilter } from "store/filters/filter-actions";
 const FilterPanel = () => {
   const dispatch = useDispatch();
   const currentFilters = useSelector(selectFilters);
+
+  console.log(currentFilters);
   if (currentFilters.length === 0) {
     return null;
   }
